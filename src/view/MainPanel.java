@@ -1,2 +1,8 @@
-package view;public class MainPanel {
+package view;
+
+public class MainPanel {
+
+    public MainPanel() {
+    }
+
 }
