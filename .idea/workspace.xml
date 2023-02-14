@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0d29180-91a1-4f0a-9504-8d119efe3587" name="Changes" comment="">
+    <list default="true" id="f0d29180-91a1-4f0a-9504-8d119efe3587" name="Changes" comment="Fixed inaccurate feedback of whether the specified position was occupied by a ship. Made positions containing a Destroyer ship refer to the same object for future tracking of how many times a ship bigger than a Submarine has been hit.">
+      <change afterPath="$PROJECT_DIR$/src/controller/MainProgram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Orientation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/BattleshipView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/LPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/XOButton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Destroyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Destroyer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Position.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Ship.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Submarine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Submarine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MainFrame.java" afterDir="false" />
@@ -20,6 +25,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -52,6 +58,14 @@
       <option name="presentableId" value="Default" />
       <updated>1673834610398</updated>
     </task>
+    <task id="LOCAL-00001" summary="Fixed inaccurate feedback of whether the specified position was occupied by a ship. Made positions containing a Destroyer ship refer to the same object for future tracking of how many times a ship bigger than a Submarine has been hit.">
+      <created>1674069092928</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674069092928</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -64,5 +78,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed inaccurate feedback of whether the specified position was occupied by a ship. Made positions containing a Destroyer ship refer to the same object for future tracking of how many times a ship bigger than a Submarine has been hit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed inaccurate feedback of whether the specified position was occupied by a ship. Made positions containing a Destroyer ship refer to the same object for future tracking of how many times a ship bigger than a Submarine has been hit." />
   </component>
 </project>
