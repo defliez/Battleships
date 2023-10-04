@@ -7,33 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0d29180-91a1-4f0a-9504-8d119efe3587" name="Changes" comment="First iteration of GUI using Swing. Added two ships of different size and orientation. Tracking of hits and when a ship is sunk works. &#10;Bug: Button press on last index of a ship doesn't disable the JButton, and pressing it a second time registers yet again that a ship has been sunk, leading to an inaccurate value of numOfRemainingShips.">
-      <change afterPath="$PROJECT_DIR$/src/Highscore.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Battleship.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Cruiser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Highscore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Hunter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/ShipType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Torpedo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/Buttons.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/CenterPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/RightPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/SouthPanel.java" afterDir="false" />
+    <list default="true" id="f0d29180-91a1-4f0a-9504-8d119efe3587" name="Changes" comment="feat(Ship, ShipType, Player): Implement ShipType enum, refactor Ship, add Player class&#10;&#10;The commit includes three significant changes:&#10;&#10;1. A new enumeration, ShipType, has been created to represent various types of ships (Submarine, Torpedo, Cruiser, Hunter, Battleship).&#10;2. The Ship class has been refactored. The 'length' variable has been changed to 'size', and the 'orientation', 'x', and 'y' variables have been removed. The class is now abstract and has a new variable 'shipType' of type ShipType.&#10;3. A new class, Player, has been added to the model package. It implements the Comparable interface and contains variables 'name' and 'score'.">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/MainProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MainProgram.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Destroyer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Orientation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Position.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Result.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Ship.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Submarine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Submarine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/BattleshipView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/MainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MainPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,12 +30,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "defliez"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;defliez&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -78,22 +57,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/valentino/Desktop/obj/Battleships",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/valentino/Desktop/obj/Battleships&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="model" />
@@ -129,7 +108,12 @@
       <option name="presentableId" value="Default" />
       <updated>1673834610398</updated>
       <workItem from="1696083775596" duration="8000" />
-      <workItem from="1696083791806" duration="808000" />
+      <workItem from="1696083791806" duration="1786000" />
+      <workItem from="1696172589516" duration="271000" />
+      <workItem from="1696292604402" duration="1431000" />
+      <workItem from="1696435598485" duration="101000" />
+      <workItem from="1696435847473" duration="297000" />
+      <workItem from="1696436362691" duration="52000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed inaccurate feedback of whether the specified position was occupied by a ship. Made positions containing a Destroyer ship refer to the same object for future tracking of how many times a ship bigger than a Submarine has been hit.">
       <created>1674069092928</created>
@@ -145,7 +129,39 @@
       <option name="project" value="LOCAL" />
       <updated>1676390069457</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: Implement GUI using Swing for Battleships game&#10;&#10;This commit includes the initial implementation of the GUI for the&#10;Battleships game using Swing. Several classes were added, including&#10;CenterPanel, RightPanel, SouthPanel, MainPanel, and MainFrame. &#10;&#10;The GUI includes a grid for the game board, panels for displaying game information, high scores, and ship information, and a button for restarting the game.&#10;&#10;This commit also includes the addition of an enum for button labels.">
+      <option name="closed" value="true" />
+      <created>1696086217397</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696086217397</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: Add new ship classes and update Submarine class&#10;&#10;- Un-comment and modify Submarine class to specify ship type in constructor&#10;- Add new Battleship, Torpedo, Cruiser, and Hunter classes with respective ship type and size in constructor">
+      <option name="closed" value="true" />
+      <created>1696116013589</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696116013589</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: Add Highscore model and text file &#10;&#10;This commit introduces a Highscore model to manage the game's high scores. The Highscore model can read and write to a dedicated text file, 'Highscore.txt'. It also includes a method to add a new player to the high score list, maintaining a maximum limit of 10 players. The text file includes the initial player names and their scores.">
+      <option name="closed" value="true" />
+      <created>1696172672379</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696172672379</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat(Ship, ShipType, Player): Implement ShipType enum, refactor Ship, add Player class&#10;&#10;The commit includes three significant changes:&#10;&#10;1. A new enumeration, ShipType, has been created to represent various types of ships (Submarine, Torpedo, Cruiser, Hunter, Battleship).&#10;2. The Ship class has been refactored. The 'length' variable has been changed to 'size', and the 'orientation', 'x', and 'y' variables have been removed. The class is now abstract and has a new variable 'shipType' of type ShipType.&#10;3. A new class, Player, has been added to the model package. It implements the Comparable interface and contains variables 'name' and 'score'.">
+      <option name="closed" value="true" />
+      <created>1696293619570</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696293619570</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +181,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed inaccurate feedback of whether the specified position was occupied by a ship. Made positions containing a Destroyer ship refer to the same object for future tracking of how many times a ship bigger than a Submarine has been hit." />
     <MESSAGE value="First iteration of GUI using Swing. Added two ships of different size and orientation. Tracking of hits and when a ship is sunk works. &#10;Bug: Button press on last index of a ship doesn't disable the JButton, and pressing it a second time registers yet again that a ship has been sunk, leading to an inaccurate value of numOfRemainingShips." />
-    <option name="LAST_COMMIT_MESSAGE" value="First iteration of GUI using Swing. Added two ships of different size and orientation. Tracking of hits and when a ship is sunk works. &#10;Bug: Button press on last index of a ship doesn't disable the JButton, and pressing it a second time registers yet again that a ship has been sunk, leading to an inaccurate value of numOfRemainingShips." />
+    <MESSAGE value="feat: Implement GUI using Swing for Battleships game&#10;&#10;This commit includes the initial implementation of the GUI for the&#10;Battleships game using Swing. Several classes were added, including&#10;CenterPanel, RightPanel, SouthPanel, MainPanel, and MainFrame. &#10;&#10;The GUI includes a grid for the game board, panels for displaying game information, high scores, and ship information, and a button for restarting the game.&#10;&#10;This commit also includes the addition of an enum for button labels." />
+    <MESSAGE value="feat: Add new ship classes and update Submarine class&#10;&#10;- Un-comment and modify Submarine class to specify ship type in constructor&#10;- Add new Battleship, Torpedo, Cruiser, and Hunter classes with respective ship type and size in constructor" />
+    <MESSAGE value="feat: Add Highscore model and text file &#10;&#10;This commit introduces a Highscore model to manage the game's high scores. The Highscore model can read and write to a dedicated text file, 'Highscore.txt'. It also includes a method to add a new player to the high score list, maintaining a maximum limit of 10 players. The text file includes the initial player names and their scores." />
+    <MESSAGE value="feat(Ship, ShipType, Player): Implement ShipType enum, refactor Ship, add Player class&#10;&#10;The commit includes three significant changes:&#10;&#10;1. A new enumeration, ShipType, has been created to represent various types of ships (Submarine, Torpedo, Cruiser, Hunter, Battleship).&#10;2. The Ship class has been refactored. The 'length' variable has been changed to 'size', and the 'orientation', 'x', and 'y' variables have been removed. The class is now abstract and has a new variable 'shipType' of type ShipType.&#10;3. A new class, Player, has been added to the model package. It implements the Comparable interface and contains variables 'name' and 'score'." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(Ship, ShipType, Player): Implement ShipType enum, refactor Ship, add Player class&#10;&#10;The commit includes three significant changes:&#10;&#10;1. A new enumeration, ShipType, has been created to represent various types of ships (Submarine, Torpedo, Cruiser, Hunter, Battleship).&#10;2. The Ship class has been refactored. The 'length' variable has been changed to 'size', and the 'orientation', 'x', and 'y' variables have been removed. The class is now abstract and has a new variable 'shipType' of type ShipType.&#10;3. A new class, Player, has been added to the model package. It implements the Comparable interface and contains variables 'name' and 'score'." />
   </component>
 </project>
